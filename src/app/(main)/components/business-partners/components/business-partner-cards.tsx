@@ -9,7 +9,7 @@ export function BusinessPartnerCards() {
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="fast"
+        speed="normal"
         className=""
       />
     </div>

@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { cn } from "../../../utils/cn";
+
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -12,8 +13,6 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     src: string;
-    // name: string;
-    // title: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
