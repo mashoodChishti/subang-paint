@@ -11,7 +11,7 @@ import {
   CardBody,
   CardContainer,
   CardItem,
-} from "../../../../../components/ui/3d-card";
+} from "../../../../components/ui/3d-card";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 export const Services = () => {
@@ -102,17 +102,17 @@ export const Services = () => {
     []
   );
   return (
-    <div className=" h-[50vh] w-full">
+    <div className="  w-full">
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute  w-full h-[50vh]  -z-10"
+        className="absolute h-[100%] w-full -z-10"
       />
 
-      <div className="flex flex-col  items-center justify-center ">
+      <div className="flex flex-col items-center justify-center ">
         <div className="h-[30%]">
-          <h1 className="text-3xl  font-bold text-center">
+          <h1 className="text-3xl font-bold text-center">
             {" "}
             Subang Paints Services
           </h1>
@@ -120,9 +120,9 @@ export const Services = () => {
             Welcome to Subang Paints, where our commitment to quality,
           </h2>
         </div>
-        <div className=" h-[70%] my-4 flex self-center justify-center items-center">
+        <div className=" h-[70%] flex self-center justify-center items-center">
           <CardContainer className="w-2/3 h-auto sticky ">
-            <CardBody className="p-8 hover:shadow-2xl  items-center justify-center rounded-xl group hover:bg-[#ebf0e6] transition-all duration-300 hover:scale-105">
+            <CardBody className="p-8 hover:shadow-2xl items-center justify-center rounded-xl group hover:bg-[#ebf0e6] transition-all duration-300 hover:scale-105">
               <CardItem translateZ={100}>
                 <Image
                   src={"/homepage/homepage_services_card1.png"}
@@ -179,7 +179,7 @@ export const Services = () => {
                 ensuring that every space reflects your personality. Subang
                 Paints turns your vision into vibrant reality.
               </CardItem>
-              <CardItem translateZ={60}>
+              <CardItem translateZ={10}>
                 <Link
                   href=""
                   className=" hidden group-hover:flex transition-all delay-150 items-center hover:transition-all  hover:translate-x-4 ease-in-out duration-700 "

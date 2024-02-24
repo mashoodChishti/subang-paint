@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "../../../../../../components/ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "../../../../../components/ui/infinite-moving-cards";
 
 export function BusinessPartnerCards() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white  items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
-        speed="slow"
+        speed="fast"
+        className=""
       />
     </div>
   );
@@ -17,15 +18,21 @@ export function BusinessPartnerCards() {
 
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    src: "/homepage/nestle_logo.png",
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    src: "/homepage/cgcc_logo.png",
+  },
+  {
+    src: "/homepage/ccc_logo.png",
+  },
+  {
+    src: "/homepage/haris&co_logo.png",
+  },
+  {
+    src: "/homepage/fwo_logo.png",
+  },
+  {
+    src: "/homepage/omarassociates_logo.png",
   },
 ];

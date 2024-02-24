@@ -52,41 +52,79 @@ export const HeaderNav = () => {
         <div className="flex items-center space-x-8">
           <a
             href="/"
-            className={clsx("text-lg hover:underline transition-all duration-300  hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/",
-              "text-[#ca1a73]": pathname === "/",
-            })}
+            className={clsx(
+              "text-lg hover:underline transition-all duration-300  hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8": pathname === "/",
+                "text-[#ca1a73]": pathname === "/",
+              }
+            )}
           >
             Home
           </a>
-          <a href="/" className={clsx("text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/about",
-              "text-[#ca1a73]": pathname === "/about",
-            })}>
+          <a
+            href="/about-us"
+            className={clsx(
+              "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8":
+                  pathname === "/about-us",
+                "text-[#ca1a73]": pathname === "/about-us",
+              }
+            )}
+          >
             About Us
           </a>
-          <a href="/" className={clsx("text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/products",
-              "text-[#ca1a73]": pathname === "/products",
-            })}>
+          <a
+            href="/"
+            className={clsx(
+              "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8":
+                  pathname === "/products",
+                "text-[#ca1a73]": pathname === "/products",
+              }
+            )}
+          >
             Products
           </a>
-          <a href="/" className={clsx("text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/services",
-              "text-[#ca1a73]": pathname === "/services",
-            })}>
+          <a
+            href="/"
+            className={clsx(
+              "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8":
+                  pathname === "/services",
+                "text-[#ca1a73]": pathname === "/services",
+              }
+            )}
+          >
             Services
           </a>
-          <a href="/" className={clsx("text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/our-projects",
-              "text-[#ca1a73]": pathname === "/our-projects",
-            })}>
+          <a
+            href="/"
+            className={clsx(
+              "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8":
+                  pathname === "/our-projects",
+                "text-[#ca1a73]": pathname === "/our-projects",
+              }
+            )}
+          >
             Our Projects
           </a>
-          <a href="/" className={clsx("text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]", {
-              "underline decoration-2 underline-offset-8": pathname === "/contact",
-              "text-[#ca1a73]": pathname === "/contact",
-            })}>
+          <a
+            href="/"
+            className={clsx(
+              "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
+              {
+                "underline decoration-2 underline-offset-8":
+                  pathname === "/contact",
+                "text-[#ca1a73]": pathname === "/contact",
+              }
+            )}
+          >
             Contact
           </a>
         </div>

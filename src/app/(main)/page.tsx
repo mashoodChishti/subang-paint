@@ -4,6 +4,7 @@ import { WhySubang } from "./components/why-subang";
 import { Services } from "./components/services";
 import { ConnectWithUs } from "./components/connect-with-us";
 import { BusinessPartners } from "./components/business-partners";
+import { Testimonials } from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <ConnectWithUs />
       <BusinessPartners />
+      <Testimonials/>
     </main>
   );
 }
