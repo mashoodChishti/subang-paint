@@ -76,7 +76,7 @@ export const HeaderNav = () => {
             About Us
           </a>
           <a
-            href="/"
+            href="/products"
             className={clsx(
               "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
               {
@@ -89,7 +89,7 @@ export const HeaderNav = () => {
             Products
           </a>
           <a
-            href="/"
+            href="/services"
             className={clsx(
               "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
               {
@@ -102,7 +102,7 @@ export const HeaderNav = () => {
             Services
           </a>
           <a
-            href="/"
+            href="/our-projects"
             className={clsx(
               "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
               {
@@ -115,13 +115,13 @@ export const HeaderNav = () => {
             Our Projects
           </a>
           <a
-            href="/"
+            href="/contact-us"
             className={clsx(
               "text-lg transition-all duration-300 hover:underline hover:decoration-2 hover:underline-offset-8 hover:text-[#ca1a73]",
               {
                 "underline decoration-2 underline-offset-8":
-                  pathname === "/contact",
-                "text-[#ca1a73]": pathname === "/contact",
+                  pathname === "/contact-us",
+                "text-[#ca1a73]": pathname === "/contact-us",
               }
             )}
           >

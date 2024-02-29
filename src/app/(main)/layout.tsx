@@ -7,7 +7,7 @@ export default function PageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <HeaderNav />
       {children}
       <Footer />

@@ -7,14 +7,10 @@ import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import Image from "next/image";
 import Link from "next/link";
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "../../../../components/ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-export const Services = () => {
+export const SubangServices = () => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -102,16 +98,16 @@ export const Services = () => {
     []
   );
   return (
-    <div className="h-[50vh]  w-full">
+    <div className="  w-full">
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute h-[50vh]  w-full z-0"
+        className="absolute h-[100%] w-full -z-10"
       />
 
-      <div className="flex flex-col items-center z-10 justify-center ">
-        <div className="h-[30%] z-0">
+      <div className="flex flex-col items-center justify-center ">
+        <div className="h-[30%]">
           <h1 className="text-3xl font-bold text-center">
             {" "}
             Subang Paints Services
@@ -120,9 +116,9 @@ export const Services = () => {
             Welcome to Subang Paints, where our commitment to quality,
           </h2>
         </div>
-        <div className=" h-[70%] my-8 flex self-center justify-center items-center">
+        <div className=" h-[70%] flex self-center justify-center items-center">
           <CardContainer className="w-2/3 h-auto sticky ">
-            <CardBody className="p-8 hover:shadow-2xl items-center justify-center rounded-xl group hover:bg-[#eee6f0] transition-all duration-300 hover:scale-105">
+            <CardBody className="p-8 hover:shadow-2xl items-center justify-center rounded-xl group hover:bg-[#ebf0e6] transition-all duration-300 hover:scale-105">
               <CardItem translateZ={100}>
                 <Image
                   src={"/homepage/homepage_services_card1.png"}
@@ -157,7 +153,7 @@ export const Services = () => {
             </CardBody>
           </CardContainer>
           <CardContainer className="w-2/3 h-auto ">
-            <CardBody className="p-8 hover:shadow-2xl rounded-xl group hover:bg-[#eee6f0] transition-all duration-300 hover:scale-105">
+            <CardBody className="p-8 hover:shadow-2xl rounded-xl group hover:bg-[#ebf0e6] transition-all duration-300 hover:scale-105">
               <CardItem translateZ={100}>
                 <Image
                   src={"/homepage/homepage_services_card2.png"}
@@ -192,7 +188,7 @@ export const Services = () => {
             </CardBody>
           </CardContainer>
           <CardContainer className="w-2/3 h-auto ">
-            <CardBody className="p-8 hover:shadow-2xl rounded-xl group hover:bg-[#eee6f0] transition-all duration-300 hover:scale-105">
+            <CardBody className="p-8 hover:shadow-2xl rounded-xl group hover:bg-[#ebf0e6] transition-all duration-300 hover:scale-105">
               <CardItem translateZ={100}>
                 <Image
                   src={"/homepage/homepage_services_card3.png"}

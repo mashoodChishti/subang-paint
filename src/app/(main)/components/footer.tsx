@@ -8,8 +8,8 @@ import LinkedIn from "@/lib/social-logos/linkedin";
 
 export const Footer = () => {
   return (
-    <footer>
-      <div className=" h-[50vh] bg-black py-10 2xl:py-14 text-white  flex flex-col font-ginger  2xl:max-w-1920 2xl:mx-auto">
+    <footer className=" bg-black">
+      <div className=" h-[50vh]  py-10 2xl:py-14 text-white  flex flex-col font-ginger  2xl:max-w-1920 2xl:mx-auto">
         <div className="grid grid-col-1 lg:mx-10  ">
           <div className=" grid grid-cols-2    p-4 lg:p-0 lg:grid-cols-4 gap-x-5 md:justify-items-center 2xl:justify-between">
             <div className=" col-span-2">

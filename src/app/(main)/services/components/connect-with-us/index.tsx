@@ -6,12 +6,12 @@ export const ConnectWithUs = () => {
       <section className="">
         <div className="text-black w-[100vw] pb-16 flex justify-center items-center lg:text-white lg:relative h-full lg:h-[50vh] 3xl:h-[65vh]">
           <img
-            className="lg:absolute w-[100vw] h-[50vh] object-cover  z-0"
+            className="lg:absolute w-[100vw] h-[50vh] object-cover  -z-10"
             src="/homepage/connect-with-us-bg.jpg"
             alt=""
           />
 
-          <div className="z-10 ">
+          <div className=" ">
             <div className=" text-white ">
               <div className="p-4 lg:p-16 text-center">
                 <h1 className="barcond text-xl lg:text-5xl  font-bold">

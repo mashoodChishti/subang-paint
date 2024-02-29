@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -24,7 +24,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, [addAnimation]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {

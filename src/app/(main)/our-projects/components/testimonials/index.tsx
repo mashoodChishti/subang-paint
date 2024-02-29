@@ -25,7 +25,7 @@ export const Testimonials = () => {
     });
   }, [api]);
   return (
-    <div className=" flex flex-col justify-between items-center h-[70vh] w-full my-8">
+    <div className="flex flex-col justify-between items-center h-[70vh] w-full my-8">
       <h2 className="text-4xl font-bold">Testimonials</h2>
       <Carousel
         setApi={setApi}
